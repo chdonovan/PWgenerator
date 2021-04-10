@@ -39,22 +39,22 @@ function generatePassword() {
   else if (enter < 8 || enter > 128) {
     // Validates user input
     // Start user input prompts
-    enter = alert("You must choose between 8 and 128");
+    enter = alert("pick netween 8 and 128");
 
   } 
   else {
     // Continues once user input is validated
-    confirmNumber = confirm("Will this contain numbers?");
-    confirmCharacter = confirm("Will this contain special characters?");
-    confirmUppercase = confirm("Will this contain Uppercase letters?");
-    confirmLowercase = confirm("Will this contain Lowercase letters?");
+    confirmNumber = confirm("are you gonna use numbers??");
+    confirmCharacter = confirm("how about some special characters?");
+    confirmUppercase = confirm("Uppercase letters?");
+    confirmLowercase = confirm("maybe some Lowercase letters?");
   
   };
   
   // Else if for all negative selections
   
   if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-    choices = alert("You must make a choice!");
+    choices = alert("You gotta pick something!");
 
   }
 
