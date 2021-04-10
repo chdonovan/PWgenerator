@@ -147,6 +147,3 @@ function UserInput(ps) {
 
 }
 
-
-generateBtn.addEventListener("click", writePassword);
-
