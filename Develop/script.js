@@ -35,6 +35,7 @@ function generatePassword(){
   //character choice prompt
   enter = parseInt(prompt("How many Characters would you like? pick a number between 8 and 128"));
   if (!enter){
+    
     alert("no value selected. please enter a value");
   }else if (enter < 8 || enter > 128){
     //input validation
@@ -46,7 +47,23 @@ function generatePassword(){
     confirmUppercase = confirm(" do you want to use uppercase letters?");
     confirmLowerCase  = confirm("do you want to use uppercase letters?");
   };
+  // Else if for all negative selections
+  
+  if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase){
+    choices = alert("you must choose at least one type of character");
+  }
+
+  // Else for all yes
+  else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
+
+  choices = character.concat(number, alpha, alpha2);
+  }
+
+
+
+
 }
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
