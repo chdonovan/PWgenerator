@@ -32,7 +32,20 @@ get.addEventListener("click", function(){
 
 //begining of password generate function
 function generatePassword(){
+  //character choice prompt
   enter = parseInt(prompt("How many Characters would you like? pick a number between 8 and 128"));
+  if (!enter){
+    alert("no value selected. please enter a value");
+  }else if (enter < 8 || enter > 128){
+    //input validation
+    enter = parseInt(prompt("choose a value between 8 and 128"));
+
+  } else {
+    confirmNumber = confirm("do you want to use neumbers?");
+    confirmCharacter = confirm(" Do you want to include special characters?");
+    confirmUppercase = confirm(" do you want to use uppercase letters?");
+    confirmLowerCase  = confirm("do you want to use uppercase letters?");
+  };
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
