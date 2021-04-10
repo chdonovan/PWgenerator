@@ -10,7 +10,7 @@ var confirmUppercase;
 var confirmLowerCase;
 // Password variable values
 
-character =  "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+character =  ["&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 number = [1,2,3,4,5,6,7,8,9];
 alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 space = [];
@@ -29,6 +29,11 @@ get.addEventListener("click", function(){
   ps = generatePassword();
   document.getElementById("password").placeholder = ps;
 });
+
+//begining of password generate function
+function generatePassword(){
+  enter = parseInt(prompt("How many Characters would you like? pick a number between 8 and 128"));
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
