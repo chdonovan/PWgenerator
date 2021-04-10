@@ -61,7 +61,7 @@ function generatePassword(){
 }
 
   // 3 YES choices
-  else if (confirmCharacter && confirmUppercase && confirmLowercase){
+  else if (confirmCharacter && confirmNumber && confirmUppercase){
     choices = charachter.concat(number, alpha2);
   }
   else if (confirmCharacter && confirmNumber && confirmLowercase) {
@@ -108,13 +108,16 @@ function generatePassword(){
   }
 
   // uppper case conversion
-  else if
+  else if (confirmUppercase){
+    choices = space.concat(alpha2);
+  }
 
 
 
 
-}
-var password = [];
+
+  var password = [];
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
