@@ -4,4 +4,4 @@
 -- criteria for the site to generate a password for you.
 
 ## screenshot
-![](images/screenshot.png)
+![](Develop/images/screenshot.png)
