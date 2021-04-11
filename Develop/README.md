@@ -4,4 +4,4 @@
 -- criteria for the site to generate a password for you.
 
 ## screenshot
-<img src="/Develop/images/Sceenshot(1).png">
+<img src="/images/Screenshot (1).png">
